@@ -18,7 +18,6 @@
         "fs": "^0.0.1-security"
     },
     "devDependencies": {
-		"nodemon": "^1.11.0"
 	},
     "keywords": [],
     "author": "",

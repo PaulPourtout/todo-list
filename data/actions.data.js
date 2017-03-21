@@ -1,11 +1,11 @@
 module.exports = {
-  action: [
+  actions: [
     {
-      action: "Faire le ménage"
+      tache: "Faire le ménage"
     }, {
-      action: "Faire la vaiselle"
+      tache: "Faire la vaiselle"
     }, {
-      action: "Rentrer à la maison parce qu'il est tard"
+      tache: "Rentrer à la maison parce qu'il est tard"
     }
   ]
 }

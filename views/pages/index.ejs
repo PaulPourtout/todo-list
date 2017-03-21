@@ -9,18 +9,22 @@
 	<header>
 		<% include ../partials/header %>
 	</header>
-	 <main>
-	 	<h1>To do :</h1>
+	<main>
+		<h1>To do :</h1>
 		<ul>
-			<li><button><i class="fa fa-times"></i></button>Faire ça</li>
-			<li><button><i class="fa fa-times"></i></button>Faire ça</li>
-			<li><button><i class="fa fa-times"></i></button>Faire ça</li>
-			<li><button><i class="fa fa-times"></i></button>Faire ça</li>
+			<% actions.map( (action) => { %>
+				<li><button><i class="fa fa-times"></i></button>
+					<span>
+						<% action.tache %>
+					</span>
+				</li>
+				<% }) %>
+
 		</ul>
-	 </main>
-	 <footer>
-	 	<% include ../partials/footer %>
-	 </footer>
+	</main>
+	<footer>
+		<% include ../partials/footer %>
+	</footer>
 </body>
 
 </html>

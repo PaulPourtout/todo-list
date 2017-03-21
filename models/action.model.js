@@ -1,6 +1,10 @@
 class ActionModel {
-	constructor({action}) {
-		this.action = action;
+	constructor({tache}) {
+		this.tache = tache;
+	}
+
+	getTache() {
+		return this.tache;
 	}
 }
 
