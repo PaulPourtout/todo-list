@@ -1,0 +1,26 @@
+{
+    "name": "tp01-todolist",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "engines": {
+        "node": ">=7.6.0"
+    },
+	"scripts": {
+		"start": "nodemon index.js --harmony",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+    "dependencies": {
+        "body-parser": "^1.17.1",
+        "cookie-session": "^2.0.0-alpha.2",
+        "ejs": "^2.5.5",
+        "express": "^4.15.2",
+        "fs": "^0.0.1-security"
+    },
+    "devDependencies": {
+		"nodemon": "^1.11.0"
+	},
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}

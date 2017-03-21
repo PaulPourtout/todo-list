@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<% include ../partials/head %>
+</head>
+
+<body>
+	<header>
+		<% include ../partials/header %>
+	</header>
+	<main class="container">
+		<h2>Add an action to the list</h2>
+		<form action="/add" method="post">
+			<input type="text" name="name" placeholder="type your action here">
+			<input type="submit" value="Add to list">
+		</form>
+	</main>
+	<footer>
+		<% include ../partials/footer %>
+	</footer>
+</body>
+
+</html>
