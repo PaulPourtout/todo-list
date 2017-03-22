@@ -1,5 +1,6 @@
 const ActionModel = require('./action.model');
-
+const fs = require('fs');
+let jsonFile = `${__dirname}/../data/actions.data.json`;
 
 class ActionList {
 	constructor(data) {
@@ -8,9 +9,16 @@ class ActionList {
 
 	add(data) {
 		console.log('data : ', JSON.stringify(data));
+
+		let dataFile = fs.readFileSync(jsonFile);
+		let fileContent = JSON.parse(dataFile);
+
 		const action = new ActionModel(data);
 		if (action) {
-			this.list = [...this.list, action];
+			fileContent.actions.push(action);
+
+			const newJson = JSON.stringify(fileContent);
+			fs.writeFileSync(jsonFile, newJson);
 		}
 		return action;
 	}
