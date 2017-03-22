@@ -1,5 +1,6 @@
 const ActionModel = require('./action.model');
 
+
 class ActionList {
 	constructor(data) {
 		this.list = data.map(item => new ActionModel(item));

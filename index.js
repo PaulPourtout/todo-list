@@ -16,7 +16,9 @@ app.set('view engine', 'ejs');
 // Controllers
 app.get("/", homeController);
 
-app.get("/add", addController);
+app.get("/add", addController.get);
+
+app.post("/add", addController.post);
 
 
 app.listen(8080);

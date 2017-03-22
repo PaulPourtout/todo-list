@@ -10,11 +10,8 @@
 		<% include ../partials/header %>
 	</header>
 	<main class="container">
-		<h2>Add an action to the list</h2>
-		<form action="/add" method="post">
-			<input type="text" name="tache" placeholder="type your action here">
-			<input type="submit" value="Add to list">
-		</form>
+		<h2>Action <%= this.tache %> wasn't added</h2>
+		<p>Retry <a href="/">Add page</a></p>
 	</main>
 	<footer>
 		<% include ../partials/footer %>
